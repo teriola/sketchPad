@@ -1,3 +1,5 @@
+let color = 'black';
+
 let slider = document.querySelector('#slider');
 let output = document.querySelector('#value');
 output.textContent = `${slider.value}x${slider.value}`;
@@ -14,9 +16,26 @@ function createGrid(size) {
     let amount = size * size;
     for (let i = 0; i < amount; i++) {
         let square = document.createElement('div');
-        // square.addEventListener('mouseover', setColor);
+        square.addEventListener('mouseover', setColor);
         square.classList.add('square');
         grid.appendChild(square);
     }
 }
 createGrid(16);
+
+function changeSize() {
+    let sizeInput = slider.value;
+    createGrid(sizeInput);
+}
+
+function changeColor(colorInput) {
+    color = colorInput;
+}
+
+function setColor() {
+    if (color == 'random') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = color;
+    }
+}
