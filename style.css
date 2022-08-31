@@ -50,6 +50,13 @@ button {
     width: 575px;
 }
 
-#value{
+#value {
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 429px) {
+    #grid-container {
+        height: 400px;
+        width: 400px;
+    }
 }
