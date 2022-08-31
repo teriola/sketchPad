@@ -39,3 +39,13 @@ function setColor() {
         this.style.backgroundColor = color;
     }
 }
+
+function clearGrid() {
+    let squares = document.querySelectorAll('div.square');
+    squares.forEach(square => {
+        square.style.backgroundColor = 'white';
+    });
+}
+
+let resetButton = document.querySelector('#clear');
+resetButton.addEventListener('click', clearGrid);
