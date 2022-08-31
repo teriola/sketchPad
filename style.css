@@ -42,8 +42,8 @@ button {
 #grid-container {
     margin-top: 25px;
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    /* grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr); */
     border: 5px solid #1176cf;
     border-radius: 5px;
     height: 575px;
