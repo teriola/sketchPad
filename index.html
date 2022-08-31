@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>SketchPad</title>
 </head>
 
@@ -14,16 +13,18 @@
     <div class="container">
         <h1>SketchPad</h1>
         <div class="menu">
-            <button id="black">Black</button>
-            <button id="random">Random</button>
-            <button id="reset">Clear</button>
+            <button data-color="black">Black</button>
+            <button data-color="random">Random</button>
+            <button id="clear">Clear</button>
         </div>
-        <div class="grid-container"></div>
+        <div id="grid-container"></div>
         <div class="range">
-            <h2>16x16</h2>
-            <input type="range" min="1" max="100" value="16" id="slider">
+            <h1></h1>
+            <input oninput="this.previousElementSibling.value = this.value" type="range" min="1" max="100" value="16"
+                id="slider">
         </div>
     </div>
+    <script src="script.js" async defer></script>
 </body>
 
 </html>

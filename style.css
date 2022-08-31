@@ -14,9 +14,21 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
-.range{
+
+.range {
     text-align: center;
 }
+
+.square {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+output {
+    display: block;
+    font-size: 24px;
+}
+
 button {
     background-color: #1176cf;
     border-radius: 10px;
@@ -25,7 +37,7 @@ button {
     color: #fff;
 }
 
-.grid-container {
+#grid-container {
     margin-top: 25px;
     display: inline-grid;
     grid-template-columns: repeat(16, 2fr);
