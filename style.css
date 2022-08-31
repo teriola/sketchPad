@@ -53,6 +53,13 @@ button {
 #value {
     margin-bottom: 0;
 }
+button:hover{
+    background-color: #188aee;
+}
+button:active {
+    transform: scale(1.1);
+    /* transition: transform 2s ease-in-out; */
+}
 
 @media only screen and (max-width: 429px) {
     #grid-container {
