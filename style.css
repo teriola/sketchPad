@@ -17,6 +17,8 @@ body {
 
 .range {
     text-align: center;
+    display: flex;
+    gap: 10px;
 }
 
 .square {
@@ -46,4 +48,8 @@ button {
     border-radius: 5px;
     height: 575px;
     width: 575px;
+}
+
+#value{
+    margin-bottom: 0;
 }
