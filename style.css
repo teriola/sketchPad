@@ -67,3 +67,10 @@ button:active {
         width: 400px;
     }
 }
+
+@media only screen and (max-width:395px) {
+    #grid-container {
+        height: 380px;
+        width: 380px;
+    }
+}
